@@ -1,0 +1,10 @@
+{
+    "manifest_version": 1,
+    "name": "Kino",
+    "description": "Export Kindle highlights to Notion",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "highlighter_icon.png"
+    }
+  }
