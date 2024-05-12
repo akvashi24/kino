@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Kino",
+  "description": "Chrome Extension to export Kindle highlights to Notion",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "highlighter_icon.png"
+  }
+}
