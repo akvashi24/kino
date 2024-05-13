@@ -1,13 +1,12 @@
 import { useTabs } from "./utils";
 import Reroute from "./components/Reroute";
 import Export from "./components/Export";
+// import Login from "./components/Login";
 
 function App() {
   const tabs = useTabs();
 
   const currentTabURL = tabs.length !== 0 ? tabs[0].url : "";
-
-  console.log(tabs)
 
   return (
     <div className="w-96 bg-zinc-900 p-12">
@@ -23,6 +22,8 @@ function App() {
         ) : (
           <Reroute />
         )}
+        {/* Check if there is a code in localStorage */}
+        {/* <Login /> */}
       </div>
       <footer className="text-center w-full">
         <a
