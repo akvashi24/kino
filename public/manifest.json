@@ -7,5 +7,12 @@
     "default_popup": "index.html",
     "default_icon": "highlighter_icon.png"
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.amazon.com/*"],
+
+      "js": ["content.js"]
+    }
+  ]
 }

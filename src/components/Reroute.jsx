@@ -1,17 +1,13 @@
+import { checkExtension } from "../utils";
 import Button from "./Button";
 
 export default function Reroute() {
   const handleClick = () => {
-    if (chrome?.tabs === undefined) {
-      console.error(
-        "Unable to create new tab!  Check the chrome variable in console."
-      );
-    } else {
-      chrome.tabs.create({
-        url: "https://read.amazon.com/notebook",
-        active: true,
-      });
-    }
+    checkExtension();
+    chrome.tabs.create({
+      url: "https://read.amazon.com/notebook",
+      active: true,
+    });
   };
 
   return (

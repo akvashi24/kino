@@ -7,6 +7,8 @@ function App() {
 
   const currentTabURL = tabs.length !== 0 ? tabs[0].url : "";
 
+  console.log(tabs)
+
   return (
     <div className="w-96 bg-zinc-900 p-12">
       <header className="flex flex-col mb-16">

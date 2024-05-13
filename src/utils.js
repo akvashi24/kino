@@ -23,3 +23,9 @@ export function useTabs() {
 
   return tabs;
 }
+
+export function checkExtension() {
+  if (chrome?.tabs === undefined) {
+    throw new Error("Could not find Chrome tabs.  Are you in an extension?");
+  }
+}
